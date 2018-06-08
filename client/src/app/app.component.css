@@ -1,0 +1,85 @@
+.global-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-image: url('../img/back.jpg');
+  background-size: cover;
+
+}
+
+.logo-container{
+  position: absolute;
+  top: 8px;
+  left: 45%;
+  height: 200px;
+  width: 200px;
+  background-image: url('../img/logo.png');
+  background-size: cover;
+}
+
+.signup-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 48%;
+}
+
+.check-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 48%;
+  float: right;
+}
+
+.form{
+  position: relative;
+  background-color: white;
+  height: 300px;
+  width: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  color: white;
+  background-image: linear-gradient(to right bottom, #646464, #717171, #7e7e7e, #8c8c8c, #9a9a9a);
+  border-radius: 30px;
+  font-family: sans-serif;
+}
+
+.form button{
+  background-color: #089FA5;
+  border-radius: 6px;
+  border: 0;
+  width: 48%;
+  color: white;
+  font-weight: bold;
+  letter-spacing: 2px;
+
+}
+
+.buttons-container{
+  display: flex;
+  height: 30px;
+  width: 90%;
+  justify-content: space-between;
+}
+
+.form input{
+  width: 90%;
+  margin: 10px;
+  border-radius: 6px;
+
+}
+
+.form h2 {
+  position: absolute;
+  top: 30px;
+}
+
+#json{
+  width: 400px;
+}

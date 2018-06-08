@@ -1,0 +1,34 @@
+<div class="global-container">
+  <div class="logo-container">
+  </div>
+  <div class="signup-container">
+    <form class="form" *ngIf="!user">
+      <h2> Login or Signup </h2>
+      <label> Username </label>
+      <input type="text" [(ngModel)]="formInfo.username" name="username"/>
+      <br>
+      <label> Password </label>
+      <input type="password" [(ngModel)]="formInfo.password" name="password"/>
+      <div class="buttons-container">
+        <button (click)="login()"> Login </button>
+        <button (click)="signup()"> Signup </button>
+        {{message}}
+      </div>
+    </form>
+    <div class="form" *ngIf="user">
+      <h2> Welcome {{ user.username }}!! </h2>
+      <p> Here's the user object </p>
+      <pre id="json"> {{ user | json }} </pre>
+      <button (click)="logout()"> logout </button>
+    </div>
+  </div>
+  <div class="check-container">
+    <form class="form">
+      <h2> Check </h2>
+      <label> Email </label>
+      <input type="email" [(ngModel)]="formInfo.email" name="email"/>
+      <button (click)="check()"> Check </button>
+      {{message2}}
+    </form>
+  </div>
+</div>
